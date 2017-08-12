@@ -23,4 +23,4 @@ XMPP_PASS=topsecretpassword
 - deploy war to the J2EE container
 - Quentin should be accessible on your XMPP server
 - to obtain list of all currently implemented commands, type **q:help**
-- to obtain man pages of a specific command, type **q:man <command>**
+- to obtain man pages of a specific command, type **q:man commandname**
