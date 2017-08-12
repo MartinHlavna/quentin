@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+## Greetings
 
-You can use the [editor on GitHub](https://github.com/ethael/quentin/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+My name is Quentin Quinn. I am a bot and I would like to help developers to perform faster by providing basic tools and commands that developer often use during programming, like generating different types of hashes, making basic conversions, URL checks and so on. I can even remind you to do something important! In future I would like to be also your favourite Q&A and quick notes provider, or even simplified proxy to your most hated bug or work tracking system (if it has an API of some kind ;)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Application information
 
-### Markdown
+- Quentin uses XMPP protocol for communication
+- Quenting is J2SE8, J2EE7 compatible application built as war
+- Quentin currently uses only CDI spec so it does not need full J2EE container and can be run from Jetty too
+- Quentin is configured using a configuration file. It is expected to be in root of the application server installation directory
+- Quentin is written and distributed under GNU GPL v3.0
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Usage unformation
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+- create a config file in the root of your application server installation directory. make it readable for user under which your server runs and fill it with:
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ethael/quentin/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+DEBUG_MODE=true
+XMPP_HOST=your.xmpp.server.com
+XMPP_PORT=5222
+XMPP_USER=some.username
+XMPP_PASS=topsecretpassword
+```
+- deploy war to the J2EE container
+- Quentin should be accessible on your XMPP server
+- to obtain list of all currently implemented commands, type **q:help**
+- to obtain man pages of a specific command, type **q:man <command>**
