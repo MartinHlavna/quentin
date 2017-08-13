@@ -10,7 +10,7 @@ My name is Quentin Quinn. I am a bot and I would like to help developers to perf
 - Quentin is configured using a configuration file. It is expected to be in root of the application server installation directory
 - Quentin is written and distributed under GNU GPL v3.0
 
-## Usage unformation
+## Usage information
 
 - create a config file in the root of your application server installation directory. make it readable for user under which your server runs and fill it with:
 ```
