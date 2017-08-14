@@ -32,6 +32,7 @@ public class Quentin {
     }
 }
 
+//TODO replace path detection logic to make it application server implementation independent
 //TODO aliases for requesting one command (or even full nice sentences)
 //TODO casual chat feature
 //TODO check regex validity
