@@ -44,3 +44,4 @@ public class Quentin {
 //TODO get profile of person, colleague, customer
 //TODO Searching WIKI
 //TODO implement Q&A mechanism with search
+//TODO crontab syntax helper (https://crontab.guru/#0/2_*_*_*_*)
