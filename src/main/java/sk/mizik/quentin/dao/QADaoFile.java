@@ -1,7 +1,10 @@
 package sk.mizik.quentin.dao;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import sk.mizik.quentin.commands.QandA;
+import sk.mizik.quentin.exceptions.QAException;
 import sk.mizik.quentin.service.FileService;
 
 import javax.annotation.PostConstruct;
@@ -14,12 +17,23 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * File implementation of  {@link QADao}
+ *
+ * @author Martin Krupa
+ * @author Martin Hlavňa
+ */
 @ApplicationScoped
 public class QADaoFile implements QADao {
 	private List<QandA> data;
 
 	private static final String FILENAME = "qaa.txt";
 
+	private final Logger LOG = LoggerFactory.getLogger(QADaoFile.class);
+
+	/**
+	 * Initialize database. Called automatically upon bean creation
+	 */
 	@PostConstruct
 	public void init() {
 		data = new LinkedList<>();
@@ -51,8 +65,10 @@ public class QADaoFile implements QADao {
 						break;
 				}
 			}
-		} catch (NumberFormatException | IOException e) {
-			e.printStackTrace();
+
+		} catch (RuntimeException | IOException e) {
+			//NOTE: Catching runtime exception because any exception thrown from here would have break startup
+			LOG.error(e.getMessage(), e);
 		}
 	}
 
@@ -77,7 +93,7 @@ public class QADaoFile implements QADao {
 		try {
 			save();
 		} catch (IOException e) {
-			throw new RuntimeException(e); //TODO> Extract concrete exception
+			throw new QAException(e);
 		}
 	}
 
@@ -94,7 +110,7 @@ public class QADaoFile implements QADao {
 		try {
 			save();
 		} catch (IOException e) {
-			throw new RuntimeException(e); //TODO> Extract concrete exception
+			throw new QAException(e);
 		}
 	}
 

@@ -5,6 +5,8 @@ import com.google.common.io.BaseEncoding;
 import javax.enterprise.context.ApplicationScoped;
 
 /**
+ * Decode base64 encoded string
+ *
  * @author Marian Mizik
  * @see sk.mizik.quentin.commands.Command
  * @since 1.0.0

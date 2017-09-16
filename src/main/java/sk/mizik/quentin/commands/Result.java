@@ -1,6 +1,8 @@
 package sk.mizik.quentin.commands;
 
 /**
+ * Result of command
+ *
  * @author Marian Mizik
  * @since 1.0.0
  */
@@ -10,6 +12,12 @@ public class Result {
     private String sender;
     private String value;
 
+    /**
+     * Full constructor
+     * @param status Result status
+     * @param sender Sender of command request
+     * @param value Return value
+     */
     public Result(int status, String sender, String value) {
         this.status = status;
         this.sender = sender;

@@ -1,6 +1,9 @@
 package sk.mizik.quentin;
 
 /**
+ *
+ * Static constant library
+ *
  * @author Marian Mizik
  * @since 1.0.0
  */

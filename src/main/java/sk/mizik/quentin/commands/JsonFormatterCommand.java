@@ -5,10 +5,10 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.stream.Collectors;
 
 /**
+ * Pretty print json
+ *
  * @author Martin Krupa
  * @see Command
  * @since 1.1.5

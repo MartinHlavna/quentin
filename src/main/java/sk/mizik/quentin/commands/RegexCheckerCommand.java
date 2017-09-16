@@ -7,6 +7,8 @@ import java.util.regex.PatternSyntaxException;
 import java.util.stream.Collectors;
 
 /**
+ * Check if text matches regex pattern
+ *
  * @author Martin Krupa
  * @see Command
  * @since 1.1.5

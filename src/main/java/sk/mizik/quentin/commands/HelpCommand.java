@@ -6,6 +6,8 @@ import javax.enterprise.inject.Instance;
 import javax.inject.Inject;
 
 /**
+ * Print list of all commands
+ *
  * @author Marian Mizik
  * @see sk.mizik.quentin.commands.Command
  * @since 1.0.0

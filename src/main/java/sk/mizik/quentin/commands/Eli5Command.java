@@ -7,6 +7,10 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
+ * Explain like I am 5 command.
+ *
+ * Explains basic internet slang acronyms used in conversations
+ *
  * @author Martin Krupa
  * @see Command
  * @since 1.1.5

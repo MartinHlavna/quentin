@@ -7,7 +7,10 @@ import javax.inject.Inject;
 import java.util.Arrays;
 
 /**
- * @author Martinovia
+ * Manageable list of Q&As
+ *
+ * @author Martin Krupa
+ * @author Martin Hlavňa
  * @see Command
  * @since 1.1.5
  */
